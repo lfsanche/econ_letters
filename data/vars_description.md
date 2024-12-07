@@ -13,11 +13,11 @@
 - **end_page**: Ending page of the article.
 - **num_words**: Number of words in the abstract.
 - **num_words_90_flag**: Assigned a value of 1 if the abstract contains more than 90 words.
-- **idauthor_x**: Unique identifier for the author(s).
+- **idauthor**: Unique identifier for the author(s).
 - **author**: Name(s) of the author(s).
 - **prop_women**: Proportion of women among the authors.
 - **num_authors**: Total number of authors.
-- **gender_group_type**: Categorization of author gender group (e.g., male-only, female-only, mixed-gender).
+- **gender_group_type**: Categorization of author gender group (e.g., only_male, only_female, both-gender).
 - **sole_or_coauthors**: Indicates whether the article was authored solely or in collaboration.
 - **num_pages**: Total number of pages of the article.
 - **num_pages_dmean**: Number of pages normalized (demeaned) based on the dataset mean.
@@ -43,18 +43,10 @@
 - **only_males**: Assigned a value of 1 if the author team consists only of males.
 - **num_sentences**: Number of sentences in the article's abstract.
 - **num_syllables**: Number of syllables in the article's abstract.
-- **observation**: Unique identifier for observations in the dataset.
-- **authors**: List of authors for the article.
 - **jelcodes_letter**: First letter of the JEL classification assigned by the authors.
 - **jelcodes_text**: Full text of the JEL classification assigned by the authors.
 - **A_imp**, **B_imp**, ..., **Z_imp**: Assigned a value of 1 if the classification under the corresponding JEL category was imputed.
-- **tags**: Tags or keywords associated with the article.
-- **idauthor_y**: Another identifier for the author(s).
-- **all_text**: All textual content of the article.
-- **cleaned_abstract**: Cleaned version of the abstract.
-- **cleaned_all_text**: Cleaned version of the entire textual content.
 - **JEL_flag**: Indicator of whether the article includes a JEL classification.
-- **id2**: Additional identifier for the article.
 - **journal1**: Categorical variable representing the journal.
 - **log_num_pages**: Logarithm of the number of pages.
 - **log_num_words**: Logarithm of the number of words in the abstract.
