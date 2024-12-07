@@ -1,5 +1,3 @@
-Here is the completed description of the variable names based on your request:
-
 - **title**: Title of the paper.
 - **idpaper**: Unique identifier for each paper.
 - **journal**: Journal where the paper was published.
@@ -70,5 +68,3 @@ Here is the completed description of the variable names based on your request:
 - **isolated**: Indicator for whether the article is isolated in the dataset.
 - **cluster**: Identifier for clusters of articles.
 - **length_cluster**: Length or size of the cluster. 
-
-Let me know if you need further clarification or adjustments!
