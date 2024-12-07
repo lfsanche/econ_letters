@@ -2,7 +2,7 @@
 
 ## Code folder
 
-    - 0_tables.ipynb. Generate all tables included in the main manuscript and  the supplemental material. The output is saved into *tables* folder within this repository.
+- 0_tables.ipynb: Generate all tables included in the main manuscript and  the supplemental material. The output is saved into *tables* folder within this repository. The input is data.csv which is stored into *data* folder, also within this repository.
 
 ## Data folder
 
