@@ -47,7 +47,7 @@
 - **authors**: List of authors for the article.
 - **jelcodes_letter**: First letter of the JEL classification assigned by the authors.
 - **jelcodes_text**: Full text of the JEL classification assigned by the authors.
-- **A_imp**, **B_imp**, ..., **Z_imp**: Assigned a value of 1 if the authors classify their article under the corresponding JEL category (A, B, C, etc.).
+- **A_imp**, **B_imp**, ..., **Z_imp**: Assigned a value of 1 if the classification under the corresponding JEL category was imputed.
 - **tags**: Tags or keywords associated with the article.
 - **idauthor_y**: Another identifier for the author(s).
 - **all_text**: All textual content of the article.
@@ -63,7 +63,7 @@
 - **log_num_syllables**: Logarithm of the number of syllables in the abstract.
 - **aer_fkgrade**, **ecm_fkgrade**, **jpe_fkgrade**, **qje_fkgrade**, **res_fkgrade**: Flesch-Kincaid grade levels for articles published in the respective journals.
 - **aer_dale**, **ecm_dale**, **jpe_dale**, **qje_dale**, **res_dale**: Dale-Chall scores for articles published in the respective journals.
-- **A_obs**, **B_obs**, ..., **Z_obs**: Assigned a value of 1 if the article is observed to fall under the corresponding JEL category (A, B, C, etc.).
+- **A_obs**, **B_obs**, ..., **Z_obs**: It is assigned a value of 1 if the article is observed to fall under the corresponding JEL category (A, B, C, etc.). 
 - **single**: Indicator for single-authored articles.
 - **isolated**: Indicator for whether the article is isolated in the dataset.
 - **cluster**: Identifier for clusters of articles.
