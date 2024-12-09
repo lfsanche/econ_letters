@@ -1,11 +1,11 @@
 clear all
 
 
-cd "C:\Users\lfsanche\OneDrive - Escuela Superior Politécnica del Litoral\Working_Papers\AER-NLP-Research\notebooks\readability\data"
+cd "C:\Users\leona\OneDrive\1_WP\Net_journals\econ_letters"
 
 
 
-use "data.dta", clear
+use "./data/data.dta", clear
 
 forvalues i = 2001/2019{
     gen year`i' = 0
@@ -16,5 +16,5 @@ forvalues i = 2001/2019{
 *gen no_jel = 0
 *replace no_jel=1 if jel1==0
 
-specurve using readability_graph_specurve.yml, transparent_background
+specurve using "./code/readability_graph_specurve.yml"
 
