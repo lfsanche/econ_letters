@@ -8,9 +8,9 @@ Choices:
 #     - ln(Automated readability index): log_automated_readability_index
 
   Focal Variable: # reserved keyword
-    - Only female: only_female
+#     - Only female: only_female
 #     - Proportion of women: prop_women
-    # - Only male: only_male
+#     - Only male: only_male
   Control Variables: # reserved keyword
     - Baseline: both_genders log_num_authors log_num_pages jel_flag
       # - Baseline and Union: age grade collgrad wks_ue ttl_exp tenure hours wks_work union
@@ -32,7 +32,6 @@ Choices:
     - Journals, JEL code, Years, Clusters:  journal1 year  ib0.cluster  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp   
   Standard Error Clustering: # reserved keyword
     - By Network: cluster
-# # Each condition must evaluate to True/False for if an observation is included
 Conditions:
   Subsample:
     - All sample: num_words_90_flag==1  | num_words_90_flag==0
