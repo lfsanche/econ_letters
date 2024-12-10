@@ -16,29 +16,26 @@ Choices:
     - Baseline: both_genders log_num_authors log_num_pages jel_flag
       # - Baseline and Union: age grade collgrad wks_ue ttl_exp tenure hours wks_work union
   Fixed Effects: # reserved keyword AER , D, 200O THE the base cases
-    - Journals: ecm jpe qje res
+    - Journals: ee #ecm jpe qje res
     - JEL code: a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp
-    - Years: year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019
+    - Years: year #year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019
     - Clusters: ib0.cluster
-    - Journals, JEL code:  ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp 
-    - Journals, Years:  ecm jpe qje res  year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 
-    - Journals, Clusters:  ecm jpe qje res ib0.cluster
-    - JEL code, Years:  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 
+    - Journals, JEL code:  ee  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp 
+    - Journals, Years:  ee  year 
+    - Journals, Clusters:  ee ib0.cluster
+    - JEL code, Years:  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp year
+#     year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
+#             year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 
     - JEL code, Clusters:  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp ib0.cluster
-    - Year, Clusters: year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
-    - Journals, JEL code, Years:   ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp  year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019
-    - Journals, JEL code, Clusters:   ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp  ib0.cluster
-    - Journals, Years, Clusters:   ecm jpe qje res year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
-    - JEL code, Years, Clusters:  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp   year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
-    - Journals, JEL code, Years, Clusters:  ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp   year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
-            year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
+    - Year, Clusters: year ib0.cluster
+    - Journals, JEL code, Years:   ee  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp  year
+#     - Journals, JEL code, Clusters:   ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp  ib0.cluster
+#     - Journals, Years, Clusters:   ecm jpe qje res year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
+#             year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
+#     - JEL code, Years, Clusters:  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp   year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
+#             year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
+#     - Journals, JEL code, Years, Clusters:  ecm jpe qje res  a_imp b_imp c_imp  e_imp f_imp g_imp h_imp i_imp j_imp k_imp l_imp m_imp n_imp o_imp p_imp q_imp r_imp y_imp z_imp   year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
+#             year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 ib0.cluster
 #     - Journals, JEL code, Jel code * ony female, Years, Clusters:  ecm jpe qje res a b c d e f g h i j k l m n o p q r z   year2001 year2002 year2003 year2004 year2005 year2006 year2007 year2008 year2009 year2010 
 #             year2011 year2012 year2013 year2014 year2015 year2016 year2017 year2018 year2019 i.cluster
     # - Industry: ind_code
@@ -51,7 +48,7 @@ Choices:
 # # Each condition must evaluate to True/False for if an observation is included
 Conditions:
   Subsample:
-    - All sample: num_words_90_flag==1 | num_words_90_flag==0
+    - All sample: num_words_90_flag==1  | num_words_90_flag==0
                # - Abstracts with > 90 words: num_words_90_flag==1 
     
 #     - Married only: msp==1

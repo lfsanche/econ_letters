@@ -1,0 +1,33 @@
+clear all
+
+
+cd "C:/Users/leona/OneDrive/1_WP/Net_journals/econ_letters"
+
+
+
+use "./data/data_v2.dta", clear
+//
+// forvalues i = 2001/2019{
+//     gen year`i' = 0
+// 	replace year`i' = 1 if year == `i'
+// }
+
+*gen jel1 = A+B+C+D+E+F+G+H+I+J+K+L+M+N+O+P+Q+R+Z
+*gen no_jel = 0
+*replace no_jel=1 if jel1==0
+
+// local jour aer ecm jpe qje res
+// gen MCM_zaehl_4 = 0
+// foreach var of varlist `MCM_zahl4' {
+//     replace MCM_zaehl_4 = MCM_zaehl_4 + 1 if `var' == 1
+// }  
+//
+// tab MCM_zaehl_4
+
+egen ee = group(journal1)
+//
+// reghdfe log_dale_chall only_female both_genders log_num_authors log_num_pages jel_flag if (num_words_90_flag==1), absorb(ee year) vce(cluster cluster)
+
+
+specurve using "./code/readability_graph_specurve.yml", outcmd
+
