@@ -1,491 +1,0 @@
-StataFileTM:00001:01000:LiveGPH:                       :
-00008:00008:
-*! classname: twowaygraph_g
-*! family: twoway
-*! command: tw (rbar ub99 lb99 rank if 0==0, fcolor(gs12) fintensity(inten50) lcolor(gs12) lwidth(none)) (rbar ub95 lb95 rank if 0==0, fcolor(gs6) fintensity(inten40) lcolor(gs6) lwidth(none)) (scatter beta rank if pval<0.01, mcolor(blue) msymbol(o) msize(small)) (scatter beta rank if 0.01<=pval & pval<0.05, mcolor(blue) msymbol(oh) msize(small)) (scatter beta rank if 0.05<=pval & pval<0.1, mcolor(blue) msymbol(+) msize(small)) (scatter beta rank if pval>=0.1, mcolor(red) msymbol(o) msize(small)) (scatter lhs_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter focal_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter rhs_excl_focal_encoded rank, msize(vsmall) msymbol(o)) (scatter fe_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter secluster_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter cond_encoded rank if 0==0, msize(vsmall) msymbol(o)) , legend(rows(3) rowgap(1) colfirst order(3 "Point estimate ({it:p}<0.01)" 4 "Point estimate ({it:p}<0.05)" 5 "Point estimate ({it:p}<0.1)" 6 "Point estimate ({it:p}{&ge}0.1)" 1 "99% CI" 2 "95% CI") region(lcolor(white)) pos(12) ring(1) size(vsmall) symysize(vsmall) symxsize(vsmall)) xtitle("") ytitle("") yline(0, lstyle(yxline)) yscale() xscale() xlab(minmax, noticks labsize(small)) ylab(-.0031962203735911(.0118154146508555).0440654382298311, angle(0) nogrid labsize(small) format(%9.3fc)) ylab(0 "0", add custom angle(0) nogrid notick labsize(small) labcolor(cranberry)) ylab(-.0049966645108643 "{bf:Dependent variable}" -.0067971086481375 "{bf:Focal variable}" -.0085975527854107 "{bf:Control variables}" -.0112982189913205 "{bf:Fixed effects}" -.0184999955404133 "{bf:Standard error clustering}" -.0221008838149597 "{bf:Condition}", add custom angle(0) nogrid notick labsize(tiny)) ylab(-.0058968865795009 "ln(Wage/GNP deflator)" -.0076973307167741 "Tenure" -.0094977748540473 "Baseline" -.0103979969226839 "Baseline and Union" -.0121984410599571 "None" -.0130986631285937 "Race" -.0139988851972303 "Individual" -.0148991072658669 "Industry" -.0157993293345035 "Occupation" -.0166995514031401 "Industry and Occupation" -.0175997734717767 "Race-Occupation" -.0194002176090499 "None" -.0203004396776865 "By Industry" -.0212006617463231 "By Occupation" -.0230011058835963 "Central City Area only" -.0239013279522329 "Married only", add custom angle(0) nogrid notick labsize(tiny)) graphregion(fcolor(white) lcolor(white)) plotregion(fcolor(white) lcolor(white)) scale(1) xsize(6) ysize(8) saving(specurve_demo)
-*! command_date: 10 Dec 2024
-*! command_time: 08:40:20
-*! datafile: 
-*! datafile_date: 
-*! scheme: stcolor
-*! naturallywhite: 1
-*! xsize: 6
-*! ysize: 8
-*! end
-<BeginItem> serset K82e702b8 
-<BeginSerset>
-<BeginSeries>
-.name = `"ub99"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  .0142650686711583
-.max =  .0428838967647455
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"lb99"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  -.0020146789085055
-.max =  .0216039650437248
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"rank"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  1
-.max =  84
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"ub95"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  .0132416857548731
-.max =  .0380789123715145
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"lb95"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  .0013791806410657
-.max =  .0227593590438829
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"lhs_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0058968868106604
-.max =  -.0058968868106604
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-<BeginSeries>
-.name = `"focal_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0076973307877779
-.max =  -.0076973307877779
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-<BeginSeries>
-.name = `"rhs_excl_focal_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0103979967534542
-.max =  -.0094977747648954
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-<BeginSeries>
-.name = `"fe_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0175997726619244
-.max =  -.0121984407305717
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-<BeginSeries>
-.name = `"secluster_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0212006624788046
-.max =  -.019400218501687
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-<BeginSeries>
-.name = `"cond_encoded"'
-.label = `""'
-.format = `"%23.0g"'
-.type.set numeric
-.min =  -.0239013284444809
-.max =  -.0230011064559221
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-.lab_offset = (.)
-.vlabs.Declare __D_1 = `"ln(Wage/GNP deflator)"'
-.vlabs.Declare __D_2 = `"Tenure"'
-.vlabs.Declare __D_3 = `"Baseline"'
-.vlabs.Declare __D_4 = `"Baseline and Union"'
-.vlabs.Declare __D_5 = `"None"'
-.vlabs.Declare __D_6 = `"Race"'
-.vlabs.Declare __D_7 = `"Individual"'
-.vlabs.Declare __D_8 = `"Industry"'
-.vlabs.Declare __D_9 = `"Occupation"'
-.vlabs.Declare __D_10 = `"Industry and Occupation"'
-.vlabs.Declare __D_11 = `"Race-Occupation"'
-.vlabs.Declare __D_12 = `"None"'
-.vlabs.Declare __D_13 = `"By Industry"'
-.vlabs.Declare __D_14 = `"By Occupation"'
-.vlabs.Declare __D_15 = `"Central City Area only"'
-.vlabs.Declare __D_16 = `"Married only"'
-<EndSeries>
-.weight_id = (.)
-<BeginSersetData>
-sersetreadwrite    T   ÿÿşÿÿşşşşşşub99                                                                                                                                                  lb99                                                                                                                                                  rank                                                                                                                                                  ub95                                                                                                                                                  lb95                                                                                                                                                  lhs_encoded                                                                                                                                           focal_encoded                                                                                                                                         rhs_excl_focal_encoded                                                                                                                                fe_encoded                                                                                                                                            secluster_encoded                                                                                                                                     cond_encoded                                                                                                                                          %10.0g                                                   %10.0g                                                   %9.0g                                                    %10.0g                                                   %10.0g                                                   %23.0g                                                   %23.0g                                                   %23.0g                                                   %23.0g                                                   %23.0g                                                   %23.0g                                                   ‡±W7?#aÄ€`¿      ğ?Ùµút‹?Zğéï³˜V?   €U'x¿   €<‡¿   €‹K…¿   À¬’¿   ` µ•¿    —y˜¿Õ]BÌàô¥?‘NY–?      U@O›F£?—é»:N—?   €U'x¿   €<‡¿   À‘sƒ¿    ûˆ¿    ¦İ“¿    š—¿Á?jÓG.–?#aÄ€`¿  €?—SÄ™´’?Zğéï³˜V?¬:Á»ä9ü»\\*¼•[e¼­­¼¸ÌÃ¼åbÊÖ^Q–? ¯œéF_¿   @îªñ<È’?çZhLY?¬:Á»ä9ü»\\*¼•[e¼M¦¼¸ÌÃ¼‡±W7?]¿Jaw?  @@Ùµút‹?TA`b’{?¬:Á»ä9ü»\\*¼•[e¼5í¼¸ÌÃ¼1Hò“?)Ûß45‡j?  €@Z} È\†‘?òç¨côv?¬:Á»ä9ü»\\*¼•[e¼­­¼Ñl¼¼oËÛí”?HYö@¶@g?   @ketM’?´Ä´¼$ v?¬:Á»ä9ü»\\*¼•[e¼M¦¼Ñl¼¼ít©B,¦‘?‰å­¢kz?  À@
-õˆHQ?¢ä/§üf?¬:Á»ä9ü»\\*¼•[e¼5í¼Ñl¼¼pglQÑAš?Pâ (Šza?  à@ôéÒİnÎ–?‰gvâÎŠv?¬:Á»ä9ü»œ¼•[e¼­­¼¸ÌÃ¼O:§L0k?úºÉìÔK¿   A([uV™?uŠ\vÚ€l?¬:Á»ä9ü»œ¼•[e¼M¦¼¸ÌÃ¼+Lyİ’?+Ò¹È„?  Agš÷m~‘?˜ôbß×{†?¬:Á»ä9ü»œ¼•[e¼5í¼¸ÌÃ¼eÑdì'–?Éªœ},ó?   AÊDhl7D”?ÄÃ•½•º…?¬:Á»ä9ü»\\*¼ct¼­­¼¸ÌÃ¼·]•ÙÖ˜?ê±Sá™Ğy?  0A7«,§ñ(–?ö={UiC‚?¬:Á»ä9ü»\\*¼ct¼M¦¼¸ÌÃ¼(û|ƒxj“?Úœ[À‡?  @A}P5¦ƒ’?jó·9 ‰?¬:Á»ä9ü»\\*¼ct¼5í¼¸ÌÃ¼“Ú‡Lú˜?ípxTÈwz?  PA¬—ëM–?Dº+bA•‚?¬:Á»ä9ü»œ¼•[e¼­­¼Ñl¼¼“²î9m•?üZ–ÕS3…?  `AıĞƒÊÃ!”? ßó@Ê‡?¬:Á»ä9ü»œ¼•[e¼5í¼Ñl¼¼`)©ˆ¶š?0¤Ùäqu?  pAeéƒiPš—?,·‹bñ€?¬:Á»ä9ü»œ¼•[e¼M¦¼Ñl¼¼í@wâ²–?†ÀŠû‚?  €Ak¼WøpÍ”?PÉÉ×2Ä†?¬:Á»ä9ü»\\*¼f-¼­­¼¸ÌÃ¼A‹ğWå“?üù	Éˆ?  ˆAZÙáã§ÿ’?Ê~z|”Š?¬:Á»ä9ü»\\*¼f-¼5í¼¸ÌÃ¼ã}{ƒ™?JÖ¼%¬{?  A¨ #¶È–?.0Øú_ƒ?¬:Á»ä9ü»\\*¼f-¼M¦¼¸ÌÃ¼jâĞYÂr—?Ôd“,‘‚?  ˜A:¬n„Œb•?oÑWH˜±†?¬:Á»ä9ü»\\*¼Íˆ¼M¦¼¸ÌÃ¼&ã¯•?¤İn'S7‡?   AUC ”Ö¼“?9£4)ı‰?¬:Á»ä9ü»\\*¼Íˆ¼­­¼¸ÌÃ¼„İ‡•ü“?¡n%&š~‰?  ¨A<
-:“?iÁ³9‹?¬:Á»ä9ü»\\*¼Íˆ¼5í¼¸ÌÃ¼v¡`Ä×•?µtk<†?  °Ak¨5×ÍG”?¯°K~ô[‰?¬:Á»ä9ü»\\*¼ct¼­­¼Ñl¼¼zÉH"Ñš?)ìH±?z?  ¸Ai‹}8¥Û—?8ò:¬åí‚?¬:Á»ä9ü»\\*¼ct¼M¦¼Ñl¼¼4Õ÷%½Ò•?¢^FÑµÿ†?  ÀAhĞ¾%£–”?:h¸Ñéw‰?¬:Á»ä9ü»\\*¼ct¼5í¼Ñl¼¼‰Ñ‘ÒĞ™?+™2:f?  ÈA”âéö…=—?`œ6µÙ„?¬:Á»ä9ü»\\*¼øÛG¼­­¼¸ÌÃ¼şÍ@‰¾”?¤ºt¨ÃŠ?  ĞA@îÎ\3Ñ“? zXtÜ‹?¬:Á»ä9ü»\\*¼øÛG¼5í¼¸ÌÃ¼ºû’›v?mm mWt?  ØAS{/}™?½7‰?¬:Á»ä9ü»\\*¼øÛG¼M¦¼¸ÌÃ¼/î4V6”?ğ_z˜F÷Œ?  àAu}{\“?dAy	Òª?¬:Á»ä9ü»\\*¼Íˆ¼­­¼Ñl¼¼I¿½Õ4a–?»½8U‰¡ˆ?  èAYr$-•?šWkÔØ	‹?¬:Á»ä9ü»\\*¼Íˆ¼5í¼Ñl¼¼)e¯”Fß˜?üqU×e¥ƒ?  ğAcù(ÿ®–?ˆIbÇˆ?¬:Á»ä9ü»\\*¼Íˆ¼M¦¼Ñl¼¼e«)]5š?Œ£U;?  øAÉÏ½u¿¯—?wC/¼OF†?¬:Á»ä9ü»\\*¼Æ›V¼­­¼¸ÌÃ¼x¬ÌJ•?xüĞˆï1‹?   Be­Ñ@_”?é‘:Á	?¬:Á»ä9ü»\\*¼Æ›V¼5í¼¸ÌÃ¼uíh‡0˜?}÷º~…?  BË‚A;–?Ï3ği‰?¬:Á»ä9ü»\\*¼˜m¼­­¼¸ÌÃ¼ÎL¬ù&•?a¾pÚª‘‹?  BÚ^nE”?¼£­8ÀT?¬:Á»ä9ü»\\*¼˜m¼5í¼¸ÌÃ¼	™Ø¸Y›?‰@Ã1Ä~?  B{P©Ø¡|˜?~ÀáF…?¬:Á»ä9ü»\\*¼˜m¼M¦¼¸ÌÃ¼b³vÀ´?­)£WYv?  BzÁì¿ò-š?lxå¬Ì‚?¬:Á»ä9ü»\\*¼Æ›V¼M¦¼¸ÌÃ¼nÑÜ÷ç–?…y¬İ‰?  B,xS=`m•?	,¿ÏwŒ?¬:Á»ä9ü»\\*¼f-¼­­¼Ñl¼¼ÖµØhº›?A¿uŞ4€?  BS"Œ•Ş˜?FE,ƒì…?¬:Á»ä9ü»\\*¼f-¼M¦¼Ñl¼¼²ÿe:—?ÃqË9‰?  BÁk·CyÓ•?jª¼Œ?¬:Á»ä9ü»\\*¼f-¼5í¼Ñl¼¼orev ™?w»
-ø¢ú…?   Bl r¡~—?DƒİL>Š?¬:Á»ä9ü»\\*¼øÛG¼­­¼Ñl¼¼ºãÖòòš?%ß…’áèƒ?  $BRç{iOƒ˜?»-Tm(Èˆ?¬:Á»ä9ü»œ¼ct¼­­¼¸ÌÃ¼Hv1Ÿ?Œ¢çüòbw?  (BØ¡_ñ›?%¨Ã9¼ƒ?¬:Á»ä9ü»\\*¼øÛG¼M¦¼Ñl¼¼¨Õğt?vh´µ¡]z?  ,BóáÑ³¨úš?§ÀáT›"„?¬:Á»ä9ü»œ¼ct¼M¦¼¸ÌÃ¼K/X¹s–?¼%ÕIó?  0B·­¥49•?}+qƒ¥?¬:Á»ä9ü»œ¼ct¼5í¼¸ÌÃ¼N¸u³î—?HVRÚ‚Š?  4B2$yÊ§–?€­?¬:Á»ä9ü»\\*¼øÛG¼5í¼Ñl¼¼æìÉMm›?úÇ‚=…?  8BuäêWŠ™?&…«	Š?¬:Á»ä9ü»œ¼f-¼­­¼¸ÌÃ¼_fêOnœ–?n‡•î?  <B—Ã¬BÑÃ•?œfˆ„ea?¬:Á»ä9ü»œ¼f-¼5í¼¸ÌÃ¼’K‹‰¼ş?z§öè™|?  @B¢I…›?èÀMpR?…?¬:Á»ä9ü»œ¼f-¼M¦¼¸ÌÃ¼‰9Rø:?ûkş R‚?  DBÆf¢j–Nš?ª°,ßc+ˆ?¬:Á»ä9ü»œ¼Íˆ¼M¦¼¸ÌÃ¼‹`zq–?e±¿­‹?  HBumC²ãÌ•?ÂQõ§d—?¬:Á»ä9ü»œ¼Íˆ¼5í¼¸ÌÃ¼­Î%"@™?á9jLHŠ?  LB4¦ÂnÁƒ—?2ìÖÁ?¬:Á»ä9ü»œ¼Íˆ¼­­¼¸ÌÃ¼Gş—1›Ğš?`kı¿kˆ?  PB–|!øÿ¯˜?àcXpö¬Œ?¬:Á»ä9ü»\\*¼Æ›V¼­­¼Ñl¼¼Úq
-®ºœ?œÔ™Bñ„?  TBù{C¸Nš?Ú‡b…ÈBŠ?¬:Á»ä9ü»\\*¼˜m¼M¦¼Ñl¼¼ –]Õ™?~İ­0,¯Œ?  XB†Sø®q—?²=é·Û?¬:Á»ä9ü»\\*¼˜m¼­­¼Ñl¼¼;xI!×˜?‚ôF©Æ?  \B˜Œ$öo›—?Ëÿö‡?¬:Á»ä9ü»\\*¼˜m¼5í¼Ñl¼¼@ŒˆŸ,¸Ÿ?›û’ã~?  `BÖ^-xN9œ?“(´[…o†?¬:Á»ä9ü»\\*¼Æ›V¼M¦¼Ñl¼¼ÄPrjŞ™?õæ³ùŒ?  dBAnœÏ—?´›H¬‚?¬:Á»ä9ü»\\*¼Æ›V¼5í¼Ñl¼¼xásÿ¾¢?®·³I~w?  hB6•<étq ?jOõ„?¬:Á»ä9ü»œ¼˜m¼M¦¼¸ÌÃ¼¯†0U?Õì.ºX{Š?  lBH® øöá›?¡ŸùéÊa?¬:Á»ä9ü»œ¼˜m¼­­¼¸ÌÃ¼6 sC™?ãîüù>O’?  pBÏtë½n˜?J	Œ‚$“?¬:Á»ä9ü»œ¼˜m¼5í¼¸ÌÃ¼Ìî3‘˜?rqmM?  tBG˜ÅG›?>RrW‘?¬:Á»ä9ü»œ¼ct¼­­¼Ñl¼¼Çb<	5ï ?÷Q&Ii„?  xBKØÄØ|?EÎgä‹S‹?¬:Á»ä9ü»œ¼øÛG¼­­¼¸ÌÃ¼ücM„H½™?ó~#®´o’?  |Bi¨°n¾İ˜?‡:ÀÃ>O“?¬:Á»ä9ü»œ¼øÛG¼5í¼¸ÌÃ¼#;Ä%`¤?»b!(®k?  €BX‚ë2Ø¨¡?e»³¿È?¬:Á»ä9ü»œ¼øÛG¼M¦¼¸ÌÃ¼±¿é™İš?.¾şı?Z‘?  ‚B›BPiaº™?a;Ç}x}’?¬:Á»ä9ü»œ¼ct¼5í¼Ñl¼¼«Ğ§ñ¡?‰î.í'„?  „Bh|‡˜¢?ìÒ6¿‚*‹?¬:Á»ä9ü»œ¼ct¼M¦¼Ñl¼¼¾üôœ0 ?½M!«Òìˆ?  †BbSûv€z?ó™–Eº?¬:Á»ä9ü»œ¼Íˆ¼M¦¼Ñl¼¼ÕÕÍ±	›?[ËğoñÍ‘?  ˆBpëY	ï™?Î´l.šè’?¬:Á»ä9ü»œ¼Íˆ¼5í¼Ñl¼¼ó4‰%X›?Kkµ´}‘?  ŠBŠÅ³ûøè™?µÚBªî’?¬:Á»ä9ü»œ¼Íˆ¼­­¼Ñl¼¼;ğê©¤?-t€Ù:•o?  ŒB+U+Nöğ¡?L=s­É‚?¬:Á»ä9ü»œ¼Æ›V¼M¦¼¸ÌÃ¼X-µ\Œ"¡?¯‡úÏ†?  B{{¶œ[ï?Ft3J®Œ?¬:Á»ä9ü»œ¼Æ›V¼­­¼¸ÌÃ¼¾5Û’Hš?ågE‘ÿ’?  BRµ„i™?Ÿ0s·Ş“?¬:Á»ä9ü»œ¼Æ›V¼5í¼¸ÌÃ¼}š\?ŞT_K®Å?  ’Bì²B¥!‡›?¬®&›’?¬:Á»ä9ü»œ¼f-¼­­¼Ñl¼¼ «VÛá›?îäÅe^’?  ”Büt=zŸ¾š?ƒ¢¡“?¬:Á»ä9ü»œ¼f-¼5í¼Ñl¼¼}&)If;¡?`Vïé’‡?  –B^®J()Ÿ?ß37£1.?¬:Á»ä9ü»œ¼f-¼M¦¼Ñl¼¼›•¡?lw†s æ‘?  ˜Bá2¦0@¶Ÿ?¡NäxA”?¬:Á»ä9ü»œ¼øÛG¼­­¼Ñl¼¼¬€ÙI¤?ÿwœş†?  šBr)]îg+¢?Mœ#<w?¬:Á»ä9ü»œ¼˜m¼M¦¼Ñl¼¼ã£w¡¨È¥?Ùºh$_?  œB¼W°ô;£?rßêè.R‹?¬:Á»ä9ü»œ¼øÛG¼M¦¼Ñl¼¼ºI²y×?ÌL 9Ìc•?  BäÔc'!¶?ö1æÃ$…–?¬:Á»ä9ü»œ¼˜m¼5í¼Ñl¼¼¸J¥£×e ?jqÿ£–o“?   BKmJ~Ù?«™ÿÌÇa•?¬:Á»ä9ü»œ¼˜m¼­­¼Ñl¼¼´ĞådŸ?cO¹kñ-•?  ¢B·Zéñå?}Dç]–?¬:Á»ä9ü»œ¼øÛG¼5í¼Ñl¼¼ŸåŠÆq¡?‘Íl²!ù’?  ¤B’Ñ|I ?«õvÁ¢J•?¬:Á»ä9ü»œ¼Æ›V¼­­¼Ñl¼¼Õ]BÌàô¥?Hæh±1E„?  ¦BO›F£?™Èc?¬:Á»ä9ü»œ¼Æ›V¼M¦¼Ñl¼¼ßÇ ?‘NY–?  ¨B‚e8aTÕ?—é»:N—?¬:Á»ä9ü»œ¼Æ›V¼5í¼Ñl¼¼
-<EndSersetData>
-<EndSerset>
-<EndItem>
-<BeginItem> serset K82e71b18 
-<BeginSerset>
-<BeginSeries>
-.name = `"beta"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  .0099865427796075
-.max =  .0264350109589838
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"rank"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  3
-.max =  84
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-.weight_id = (.)
-<BeginSersetData>
-sersetreadwrite    Q   ÿşbeta                                                                                                                                                  rank                                                                                                                                                  %10.0g                                                   %9.0g                                                    í¯Ós„?      @›''Ç›?      U@í¯Ós„?  @@yC:²uC‡?  €@µ–¼£Õ‡?   @2îT++ˆ?  À@ºƒp–"qŒ?  à@—©]jÎŒ?  A¬&3K‚!?   AJêQ¦J?  0AJêQ¦J?  @AÎö¬œ>˜?  PAUà¾ìq?  `A¶¿¯×€	?  pA˜P2Å?  €AQŒvó$?  ˆAQŒvó$?  AyJMT¬]?  ˜AyJMT¬]?   AyJMT¬]?  ¨AaÀ-äz?  °A4‚ML©?  ¸A4‚ML©?  ÀAj	I0Õ?  ÈA¨•½®¶ß?  ĞA‹‹m;‘?  ØA"-ÀüX‘?  àA"-ÀüX‘?  èA"-ÀüX‘?  ğA´¸ê©si‘?  øA-{78âq‘?   BñUr=çw‘?  BñUr=çw‘?  B]˜´¤b…‘?  Bæ¾/‹¬›‘?  B'‡™sÔ‘?  B{ Ü¥kê‘?  B{ Ü¥kê‘?  Bh‘ğãN’?   B&ÿĞ±s’?  $Bõº šç„’?  (Ba!/û…’?  ,Ba!/û…’?  0BGÕO˜’?  4BuS¹–“?  8B•šc›“?  <B•šc›“?  @B_-$2“?  DB_-$2“?  HB_-$2“?  LB5×&˜=ƒ“?  PBó_z}Y™“?  TB>yöºµ¯“?  XB>yöºµ¯“?  \B¹“ˆ¸“?  `B®­2bSÈ“?  dB|ØãÃÈ®•?  hB¿Î6nÉ•?  lB¿Î6nÉ•?  pBÑSõ›O
-–?  tB6÷…[O–?  xBxq8™~–?  |B[Ú–?  €Bş¾‹óì–?  ‚Bş¾‹óì–?  „BPãÑk–?  †BPãÑk–?  ˆBPãÑk–?  ŠB~$ˆ¹=£–?  ŒB5O8[@£–?  BRA=6Ï£–?  Bïh÷)$—?  ’Bü$  —?  ”Bü$  —?  –BÁ@ÅÔ¥û™?  ˜B“ĞD÷6	š?  šB™Ò‘j€š?  œB{¥õ¢š?  B{¥õ¢š?   BOh…!š?  ¢BgLÁÜVîš?  ¤Bu—œ8-›?  ¦B›''Ç›?  ¨B
-<EndSersetData>
-<EndSerset>
-<EndItem>
-<BeginItem> serset K82e71078 
-<BeginSerset>
-<BeginSeries>
-.name = `"beta"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min =  .0098231212270664
-.max =  .013951731067314
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"rank"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min =  1
-.max =  8
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-.weight_id = (.)
-<BeginSersetData>
-sersetreadwrite       ÿşbeta                                                                                                                                                  rank                                                                                                                                                  %10.0g                                                   %9.0g                                                    ¹³Q%„?      ğ?Zì@¥¹’Œ?       @¹³Q%„?  €?Ø—0ş\„?   @Zì@¥¹’Œ?   A
-<EndSersetData>
-<EndSerset>
-<EndItem>
-<BeginItem> serset K82e718e8 
-<BeginSerset>
-<BeginSeries>
-.name = `"beta"'
-.label = `""'
-.format = `"%10.0g"'
-.type.set numeric
-.min = (.)
-.max = (.)
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-<BeginSeries>
-.name = `"rank"'
-.label = `""'
-.format = `"%9.0g"'
-.type.set numeric
-.min = (.)
-.max = (.)
-.median = (.)
-.pct25 = (.)
-.pct75 = (.)
-.categories = (.)
-<EndSeries>
-.weight_id = (.)
-<BeginSersetData>
-sersetreadwrite        ÿşbeta                                                                                                                                                  rank                                                                                                                                                  %10.0g                                                   %9.0g                                                          à      à      à      à
-<EndSersetData>
-<EndSerset>
-<EndItem>
-<BeginItem> scheme K832696c8 
-.setscheme , scheme(stcolor) naturallywhite(1)
-<EndItem>
-<BeginItem> twowaygraph_g K82e6cde8 <UseScheme> K832696c8
-.style.editstyle boxstyle( linestyle( color(white)) shadestyle( color(white))) editcopy
-.sersets[1] = .__Map.K82e702b8.ref
-.sersets[2] = .__Map.K82e71b18.ref
-.sersets[3] = .__Map.K82e71078.ref
-.sersets[4] = .__Map.K82e718e8.ref
-.insert (plotregion1 = .plotregion.new , style(scheme twoway) graph(`.objkey')) at 1 1
-.plotregion1.xaxis_dexes = `"1"'
-.plotregion1.yaxis_dexes = `"1"'
-.plotregion1.style.editstyle boxstyle( linestyle( color(white)) shadestyle( color(white))) editcopy
-.plotregion1.Declare plot1 = .y2xview_g.new , type(rbar) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ub99') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p1bar) ybvar(`.sersets[1].seriesof lb99')
-.plotregion1.plot1.style.editstyle line(color(gs12)) area(linestyle(color(gs12))) line(width(none)) area(linestyle(width(none))) area(shadestyle(color(gs12))) area(shadestyle(intensity(inten50))) editcopy
-.plotregion1.plot1.bar_drop_to.setstyle , style(x)
-.plotregion1.plot1.register_with_scale
-.plotregion1.Declare plot2 = .y2xview_g.new , type(rbar) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof ub95') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p2bar) ybvar(`.sersets[1].seriesof lb95')
-.plotregion1.plot2.style.editstyle line(color(gs6)) area(linestyle(color(gs6))) line(width(none)) area(linestyle(width(none))) area(shadestyle(color(gs6))) area(shadestyle(intensity(inten40))) editcopy
-.plotregion1.plot2.bar_drop_to.setstyle , style(x)
-.plotregion1.plot2.register_with_scale
-.plotregion1.Declare plot3 = .yxview.new , type(scatter) serset(`.sersets[2].objkey') yvariable(`.sersets[2].seriesof beta') xvariable(`.sersets[2].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p3) 
-.plotregion1.plot3.style.editstyle marker(symbol(o)) marker(fillcolor(blue) linestyle(color(blue))) marker(size(small)) editcopy
-.plotregion1.Declare plot4 = .yxview.new , type(scatter) serset(`.sersets[3].objkey') yvariable(`.sersets[3].seriesof beta') xvariable(`.sersets[3].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p4) 
-.plotregion1.plot4.style.editstyle marker(symbol(oh)) marker(fillcolor(blue) linestyle(color(blue))) marker(size(small)) editcopy
-.plotregion1.Declare plot5 = .yxview.new , type(scatter) serset(`.sersets[4].objkey') yvariable(`.sersets[4].seriesof beta') xvariable(`.sersets[4].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p5) 
-.plotregion1.plot5.style.editstyle marker(symbol(+)) marker(fillcolor(blue) linestyle(color(blue))) marker(size(small)) editcopy
-.plotregion1.Declare plot6 = .yxview.new , type(scatter) serset(`.sersets[4].objkey') yvariable(`.sersets[4].seriesof beta') xvariable(`.sersets[4].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p6) 
-.plotregion1.plot6.style.editstyle marker(symbol(o)) marker(fillcolor(red) linestyle(color(red))) marker(size(small)) editcopy
-.plotregion1.Declare plot7 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof lhs_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p7) 
-.plotregion1.plot7.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.Declare plot8 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof focal_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p8) 
-.plotregion1.plot8.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.Declare plot9 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof rhs_excl_focal_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p9) 
-.plotregion1.plot9.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.Declare plot10 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof fe_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p10) 
-.plotregion1.plot10.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.Declare plot11 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof secluster_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p11) 
-.plotregion1.plot11.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.Declare plot12 = .yxview.new , type(scatter) serset(`.sersets[1].objkey') yvariable(`.sersets[1].seriesof cond_encoded') xvariable(`.sersets[1].seriesof rank')     plotregion(`.plotregion1.objkey') style(scheme p12) 
-.plotregion1.plot12.style.editstyle marker(symbol(o)) marker(size(vsmall)) editcopy
-.plotregion1.clear_scales
-.plotregion1.reset_scales , noclear
-.n_views = 12
-.n_plotregions = 1
-.last_style = 12
-.x_scales = `" "1""'
-.y_scales = `" "1""'
-.create_axes 1 1 "9" "" 9
-.style.editstyle legend_ring(1) editcopy
-.style.editstyle legend_position(12) editcopy
-.insert (legend = .legend_g.new, graphs(`.objkey') style(scheme)) above plotregion1 , ring(1) 
-.legend.style.editstyle box_alignment(N) editcopy
-.legend.style.editstyle boxstyle( linestyle( color(white))) editcopy
-.legend.style.editstyle labelstyle( size(vsmall)) editcopy
-.legend.holes = ""
-.legend.style.editstyle  rows(3) col_first(yes) row_gap(1) key_xsize(vsmall) key_ysize(vsmall) editcopy
-.legend.insert (note = .sized_textbox.new, mtextq(`""') style(scheme leg_note) ) below plotregion1 , ring(3) 
-.legend.note.style.editstyle box_alignment(SW) editcopy
-.legend.note.style.editstyle horizontal(left) editcopy
-.legend.insert (caption = .sized_textbox.new, mtextq(`""') style(scheme leg_caption) ) below plotregion1 , ring(5) 
-.legend.caption.style.editstyle box_alignment(SW) editcopy
-.legend.caption.style.editstyle horizontal(left) editcopy
-.legend.insert (subtitle = .sized_textbox.new, mtextq(`""') style(scheme leg_subtitle) ) above plotregion1 , ring(6) 
-.legend.subtitle.style.editstyle box_alignment(N) editcopy
-.legend.subtitle.style.editstyle horizontal(center) editcopy
-.legend.insert (title = .sized_textbox.new, mtextq(`""') style(scheme leg_title) ) above plotregion1 , ring(7) 
-.legend.title.style.editstyle box_alignment(N) editcopy
-.legend.title.style.editstyle horizontal(center) editcopy
-.legend.rebuild
-.legend.parse_order 3 "Point estimate ({it:p}<0.01)" 4 "Point estimate ({it:p}<0.05)" 5 "Point estimate ({it:p}<0.1)" 6 "Point estimate ({it:p}{&ge}0.1)" 1 "99% CI" 2 "95% CI"
-.legend.repositionkeys
-.xaxis1.major.clear
-.xaxis1.style.editstyle majorstyle(numticks(1)) editcopy
-.xaxis1.major.minmax_ticks
-.xaxis1.reset_scale reinit
-.xaxis1.style.editstyle majorstyle( tickstyle( show_ticks(no)  textstyle( size(small))) ) editcopy
-.xaxis1.title.edit , mtextq(`""""')   replace
-.yaxis1.major.clear
-.yaxis1.major.range_ticks -.0031962203735911 .0440654382298311 .0118154146508555
-.yaxis1.reset_scale reinit
-.yaxis1.style.editstyle draw_major_grid(no) editcopy
-.yaxis1.style.editstyle majorstyle( tickangle(0) tickstyle(  textstyle( size(small))) ) editcopy
-.yaxis1.major.label_format = `"%9.3fc"'
-.yaxis1.major.add_ticks  0 `"0"' ,  custom
-.yaxis1.reset_scale reinit
-.yaxis1.style.editstyle draw_major_grid(no) editcopy
-.yaxis1.major.set_custom `.yaxis1.style.majorstyle.objkey'  tickangle(0) tickstyle( show_ticks(no)  textstyle( size(small) color(cranberry)))
-.yaxis1.major.add_ticks  -.0049966645109 `"{bf:Dependent variable}"' -.0067971086481 `"{bf:Focal variable}"' -.0085975527854 `"{bf:Control variables}"' -.0112982189913 `"{bf:Fixed effects}"' -.0184999955404 `"{bf:Standard error clustering}"' -.022100883815 `"{bf:Condition}"' ,  custom
-.yaxis1.reset_scale reinit
-.yaxis1.style.editstyle draw_major_grid(no) editcopy
-.yaxis1.major.set_custom `.yaxis1.style.majorstyle.objkey'  tickangle(0) tickstyle( show_ticks(no)  textstyle( size(tiny)))
-.yaxis1.major.add_ticks  -.0058968865795 `"ln(Wage/GNP deflator)"' -.0076973307168 `"Tenure"' -.009497774854 `"Baseline"' -.0103979969227 `"Baseline and Union"' -.01219844106 `"None"' -.0130986631286 `"Race"' -.0139988851972 `"Individual"' -.0148991072659 `"Industry"' -.0157993293345 `"Occupation"' -.0166995514031 `"Industry and Occupation"' -.0175997734718 `"Race-Occupation"' -.019400217609 `"None"' -.0203004396777 `"By Industry"' -.0212006617463 `"By Occupation"' -.0230011058836 `"Central City Area only"' -.0239013279522 `"Married only"' ,  custom
-.yaxis1.reset_scale reinit
-.yaxis1.style.editstyle draw_major_grid(no) editcopy
-.yaxis1.major.set_custom `.yaxis1.style.majorstyle.objkey'  tickangle(0) tickstyle( show_ticks(no)  textstyle( size(tiny)))
-.yaxis1.title.edit , mtextq(`""""')   replace
-tempname glsty
-.`glsty' = .gridlinestyle.new, style(scheme)
-.`glsty'.editstyle  linestyle(yxline) editcopy
-.yaxis1.plotregion.declare_xyline .gridline_g.new 0 , ordinate(y) plotregion(`.yaxis1.plotregion.objkey') styleref(`glsty') 
-.insert (r1title = .sized_textbox.new, mtextq(`""') style(scheme r1title) orientation(vertical)) rightof plotregion1 , ring(1) 
-.insert (r2title = .sized_textbox.new, mtextq(`""') style(scheme r2title) orientation(vertical)) rightof plotregion1 , ring(2) 
-.insert (l1title = .sized_textbox.new, mtextq(`""') style(scheme l1title) orientation(vertical)) leftof plotregion1 , ring(1) 
-.insert (l2title = .sized_textbox.new, mtextq(`""') style(scheme l2title) orientation(vertical)) leftof plotregion1 , ring(2) 
-.insert (t1title = .sized_textbox.new, mtextq(`""') style(scheme t1title) ) above plotregion1 , ring(1) 
-.insert (t2title = .sized_textbox.new, mtextq(`""') style(scheme t2title) ) above plotregion1 , ring(2) 
-.insert (b1title = .sized_textbox.new, mtextq(`""') style(scheme b1title) ) below plotregion1 , ring(1) 
-.insert (b2title = .sized_textbox.new, mtextq(`""') style(scheme b1title) ) below plotregion1 , ring(2) 
-.insert (note = .sized_textbox.new, mtextq(`""') style(scheme note) ) below plotregion1 , ring(4) 
-.note.style.editstyle box_alignment(SW) editcopy
-.note.style.editstyle horizontal(left) editcopy
-.insert (caption = .sized_textbox.new, mtextq(`""') style(scheme caption) ) below plotregion1 , ring(5) 
-.caption.style.editstyle box_alignment(SW) editcopy
-.caption.style.editstyle horizontal(left) editcopy
-.insert (subtitle = .sized_textbox.new, mtextq(`""') style(scheme subtitle) ) above plotregion1 , ring(6) 
-.subtitle.style.editstyle box_alignment(N) editcopy
-.subtitle.style.editstyle horizontal(center) editcopy
-.insert (title = .sized_textbox.new, mtextq(`""') style(scheme title) ) above plotregion1 , ring(7) 
-.title.style.editstyle box_alignment(N) editcopy
-.title.style.editstyle horizontal(center) editcopy
-.insert (spacert = .spacer.new) above plotregion1 , ring(11)
-.insert (spacerb = .spacer.new) below plotregion1 , ring(11)
-.insert (spacerl = .spacer.new) leftof plotregion1 , ring(11)
-.insert (spacerr = .spacer.new) rightof plotregion1 , ring(11)
-.set_scale 1
-.style.editstyle declared_xsize(6) editcopy
-.style.editstyle declared_ysize(8) editcopy
-.command = `"tw (rbar ub99 lb99 rank if 0==0, fcolor(gs12) fintensity(inten50) lcolor(gs12) lwidth(none)) (rbar ub95 lb95 rank if 0==0, fcolor(gs6) fintensity(inten40) lcolor(gs6) lwidth(none)) (scatter beta rank if pval<0.01, mcolor(blue) msymbol(o) msize(small)) (scatter beta rank if 0.01<=pval & pval<0.05, mcolor(blue) msymbol(oh) msize(small)) (scatter beta rank if 0.05<=pval & pval<0.1, mcolor(blue) msymbol(+) msize(small)) (scatter beta rank if pval>=0.1, mcolor(red) msymbol(o) msize(small)) (scatter lhs_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter focal_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter rhs_excl_focal_encoded rank, msize(vsmall) msymbol(o)) (scatter fe_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter secluster_encoded rank if 0==0, msize(vsmall) msymbol(o)) (scatter cond_encoded rank if 0==0, msize(vsmall) msymbol(o)) , legend(rows(3) rowgap(1) colfirst order(3 "Point estimate ({it:p}<0.01)" 4 "Point estimate ({it:p}<0.05)" 5 "Point estimate ({it:p}<0.1)" 6 "Point estimate ({it:p}{&ge}0.1)" 1 "99% CI" 2 "95% CI") region(lcolor(white)) pos(12) ring(1) size(vsmall) symysize(vsmall) symxsize(vsmall)) xtitle("") ytitle("") yline(0, lstyle(yxline)) yscale() xscale() xlab(minmax, noticks labsize(small)) ylab(-.0031962203735911(.0118154146508555).0440654382298311, angle(0) nogrid labsize(small) format(%9.3fc)) ylab(0 "0", add custom angle(0) nogrid notick labsize(small) labcolor(cranberry)) ylab(-.0049966645108643 "{bf:Dependent variable}" -.0067971086481375 "{bf:Focal variable}" -.0085975527854107 "{bf:Control variables}" -.0112982189913205 "{bf:Fixed effects}" -.0184999955404133 "{bf:Standard error clustering}" -.0221008838149597 "{bf:Condition}", add custom angle(0) nogrid notick labsize(tiny)) ylab(-.0058968865795009 "ln(Wage/GNP deflator)" -.0076973307167741 "Tenure" -.0094977748540473 "Baseline" -.0103979969226839 "Baseline and Union" -.0121984410599571 "None" -.0130986631285937 "Race" -.0139988851972303 "Individual" -.0148991072658669 "Industry" -.0157993293345035 "Occupation" -.0166995514031401 "Industry and Occupation" -.0175997734717767 "Race-Occupation" -.0194002176090499 "None" -.0203004396776865 "By Industry" -.0212006617463231 "By Occupation" -.0230011058835963 "Central City Area only" -.0239013279522329 "Married only", add custom angle(0) nogrid notick labsize(tiny)) graphregion(fcolor(white) lcolor(white)) plotregion(fcolor(white) lcolor(white)) scale(1) xsize(6) ysize(8) saving(specurve_demo)"'
-.date = "10 Dec 2024"
-.time = "08:40:20"
-.dta_file = ""
-.dta_date = ""
-<EndItem>
