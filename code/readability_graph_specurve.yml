@@ -2,8 +2,8 @@
 # Each choice is independent from others
 Choices:
   Dependent Variable: # reserved keyword
-    # - ln(Dale chall): log_dale_chall
-    - log(F-K grade): log_flesch_kincaid_grade_level
+#     - ln(Dale chall): log_dale_chall
+#     - log(F-K grade): log_flesch_kincaid_grade_level
 #     - ln(Coleman-Liau index): log_coleman_liau_index
 #     - ln(Automated readability index): log_automated_readability_index
 
