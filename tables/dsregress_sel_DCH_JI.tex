@@ -1,0 +1,35 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}\\
+\hline
+\hspace{3mm}log(Number authors)&     -0.0017        &     -0.0020        &     -0.0017        &     -0.0021        &     -0.0017        &     -0.0020        \\
+                    &    (0.0019)        &    (0.0018)        &    (0.0019)        &    (0.0018)        &    (0.0019)        &    (0.0018)        \\
+[1em]
+\hspace{3mm}log(Number pages)&      0.0267\sym{**}&      0.0262\sym{**}&      0.0267\sym{**}&      0.0260\sym{**}&      0.0267\sym{**}&      0.0260\sym{**}\\
+                    &    (0.0039)        &    (0.0038)        &    (0.0039)        &    (0.0037)        &    (0.0039)        &    (0.0037)        \\
+[1em]
+\hspace{3mm}Both genders&     -0.0064\sym{**}&     -0.0070\sym{**}&     -0.0030\sym{**}&     -0.0034\sym{**}&      0.0025        &      0.0024        \\
+                    &    (0.0014)        &    (0.0015)        &    (0.0014)        &    (0.0014)        &    (0.0024)        &    (0.0025)        \\
+[1em]
+\hspace{3mm}Female  &     -0.0090\sym{**}&     -0.0098\sym{**}&                    &                    &                    &                    \\
+                    &    (0.0027)        &    (0.0027)        &                    &                    &                    &                    \\
+[1em]
+\hspace{3mm}Share of women&                    &                    &     -0.0080\sym{**}&     -0.0084\sym{**}&                    &                    \\
+                    &                    &                    &    (0.0027)        &    (0.0027)        &                    &                    \\
+[1em]
+\hspace{3mm}Male    &                    &                    &                    &                    &      0.0090\sym{**}&      0.0093\sym{**}\\
+                    &                    &                    &                    &                    &    (0.0027)        &    (0.0027)        \\
+\hline
+Observations        &        4988        &        4988        &        4988        &        4988        &        4988        &        4988        \\
+Number potential controls&         257        &         257        &         257        &         257        &         257        &         257        \\
+Number controls selected&          37        &          29        &          37        &          28        &          37        &          29        \\
+$\chi^2(4)$         &      80.768        &      74.107        &      83.054        &      76.220        &      80.768        &      75.950        \\
+Selection           &                    &                    &                    &                    &                    &                    \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\)}\\
+\end{tabular}
+}

@@ -1,0 +1,34 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}&\multicolumn{1}{c}{log(Dale-Chall)}\\
+\hline
+\hspace{3mm}log(Number authors)&     -0.0005        &     -0.0005        &     -0.0004        \\
+                    &    (0.0016)        &    (0.0016)        &    (0.0016)        \\
+[1em]
+\hspace{3mm}log(Number pages)&      0.0299\sym{**}&      0.0298\sym{**}&      0.0300\sym{**}\\
+                    &    (0.0022)        &    (0.0023)        &    (0.0022)        \\
+[1em]
+\hspace{3mm}Both genders&     -0.0052\sym{**}&     -0.0026        &      0.0020        \\
+                    &    (0.0014)        &    (0.0022)        &    (0.0045)        \\
+[1em]
+\hspace{3mm}Female  &     -0.0086\sym{**}&                    &                    \\
+                    &    (0.0041)        &                    &                    \\
+[1em]
+\hspace{3mm}Share of women&                    &     -0.0062        &                    \\
+                    &                    &    (0.0040)        &                    \\
+[1em]
+\hspace{3mm}Male    &                    &                    &      0.0073\sym{*} \\
+                    &                    &                    &    (0.0042)        \\
+\hline
+Observations        &        3126        &        3126        &        3126        \\
+Number potential controls&         257        &         257        &         257        \\
+Number controls selected&          22        &          22        &          18        \\
+$\chi^2(4)$         &     209.132        &     195.321        &     210.386        \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\)}\\
+\end{tabular}
+}
