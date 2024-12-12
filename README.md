@@ -25,31 +25,23 @@
 - data.dta
 - vars_description.md
 
-
 ## Tables folder
 
-
-[text](tables/dgregress_DCH_JI.tex) 
-[text](tables/dgregress_DCH_JO.tex) 
-[text](tables/dgregress_FKG_JO.tex) 
-[text](tables/dsregress_sel_DCH_JI.tex) 
-[text](tables/dsregress_sel_DCH_JO.tex) 
-[text](tables/dsregress_sel_FKG_JI.tex) 
-[text](tables/dsregress_sel_FKG_JO.tex) 
-[text](tables/oaxaca.tex) 
-[text](tables/table1_sm.tex) 
-[text](tables/table1.tex) 
-[text](tables/table2_sm.tex) 
-[text](tables/table2.tex) 
-[text](tables/table3_sm.tex) 
-[text](<tables/xporegress FKG_JO.tex>) 
-[text](tables/xporegress_DCH_JI.tex) 
-[text](tables/xporegress_DCH_JO.tex) 
-[text](tables/xporegress_FKG_JI.tex) 
-[text](tables/xporegress_FKG_JO.tex)
-    - table1.tex
-    - table2.tex 
-    - table1_sm.tex
-    - table2_sm.tex
-    - table3_sm.tex
-  - [text](tables/dgregress_DCH_JI.tex) [text](tables/dgregress_DCH_JO.tex) [text](tables/dgregress_FKG_JO.tex) [text](tables/dsregress_sel_DCH_JI.tex) [text](tables/dsregress_sel_DCH_JO.tex)
+- [Table 1](tables/table1.tex) 
+- [Table 2](tables/table2.tex) 
+- [Table 3](tables/oaxaca.tex) 
+- [Table 4](tables/dgregress_FKG_JI.tex)
+- [SM Table 1](tables/table1_sm.tex) 
+- [SM Table 2](tables/table2_sm.tex) 
+- [SM Table 3](tables/table3_sm.tex) 
+- [SM Table 4](tables/dgregress_FKG_JO.tex) 
+- [SM Table 5](tables/dsregress_sel_FKG_JI.tex) 
+- [SM Table 6](tables/dsregress_sel_FKG_JO.tex) 
+- [SM Table 7](tables/xporegress_FKG_JI.tex) 
+- [SM Table 8](tables/xporegress_FKG_JO.tex) 
+- [SM Table 9](tables/dgregress_DCH_JI.tex) 
+- [SM Table 10](tables/dgregress_DCH_JO.tex) 
+- [SM Table 11](tables/dsregress_sel_DCH_JI.tex) 
+- [SM Table 12](tables/dsregress_sel_DCH_JO.tex) 
+- [SM Table 13](tables/xporegress_DCH_JI.tex) 
+- [SM Table 14](tables/xporegress_DCH_JO.tex) 
