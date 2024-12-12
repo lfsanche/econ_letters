@@ -19,7 +19,7 @@
 
 - [**2_specurve_extra_supp.ipynb**](code/2_specurve_supp.ipynb)  It generates Figure 1 in the supplementary materials.
 
-- [**readability_graph_specurve.yml**](code/readability_graph_specurve.yml): This file contains the parameters needed by the user-written [```specurve```](https://github.com/mgao6767/specurve) Stata command to run ```2_specurve_main.ipynb``` and ```2_specurve_extra_supp.ipynb```
+- [**readability_graph_specurve.yml**](code/readability_graph_specurve.yml): This file contains the parameters needed by the user-written [```specurve```](https://github.com/mgao6767/specurve) Stata command to run [```2_specurve_main.ipynb```](code/2_specurve_main.ipynb) and [```2_specurve_extra_supp.ipynb```](code/2_specurve_supp.ipynb).
 
 ## Data folder
 
