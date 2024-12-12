@@ -2,8 +2,8 @@
 
 ## Manuscripts
 
-- Abstract readability: Evidence from top-5 economics journals
-- Abstract Readability: Evidence from Top-5 Economics Journals – Supplemental Materials –
+- [Abstract readability: Evidence from top-5 economics journals](<Rodriguez, et al, 2024.pdf>)
+- [Abstract Readability: Evidence from Top-5 Economics Journals – Supplemental Materials –](<Rodriguez, et al, 2024, supp material.pdf>)
 
 ## Code folder
 
