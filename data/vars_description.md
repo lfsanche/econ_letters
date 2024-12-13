@@ -47,7 +47,6 @@
 - **jelcodes_text**: Full text of the JEL classification assigned by the authors.
 - **A_imp**, **B_imp**, ..., **Z_imp**: Assigned a value of 1 if the classification under the corresponding JEL category was imputed.
 - **JEL_flag**: Indicator of whether the article includes a JEL classification.
-- **journal1**: Categorical variable representing the journal.
 - **log_num_pages**: Logarithm of the number of pages.
 - **log_num_words**: Logarithm of the number of words in the abstract.
 - **log_num_authors**: Logarithm of the number of authors.
@@ -58,5 +57,6 @@
 - **A_obs**, **B_obs**, ..., **Z_obs**: It is assigned a value of 1 if the article is observed to fall under the corresponding JEL category (A, B, C, etc.). 
 - **single**: Indicator for single-authored articles.
 - **isolated**: Indicator for whether the article is isolated in the dataset.
+- **tags**: All JEL codes for the article (observed or imputed).
 - **cluster**: Identifier for clusters of articles.
 - **length_cluster**: Length or size of the cluster. 

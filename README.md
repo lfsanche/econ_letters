@@ -1,11 +1,16 @@
-# econ_letters
+# Abstract Readability: Evidence from Top-5 Economics Journals
 
-## Manuscripts
+Rodriguez, Belicia, Kim P. Huynh, David Tomás Jacho-Chávez, and Leonardo Sánchez-Aragón, (2024), "_Abstract Readability: Evidence from Top-5 Economics Journals_," **Economics Letters**, 111541.
 
-- [Abstract readability: Evidence from top-5 economics journals](<Rodriguez, et al, 2024.pdf>)
-- [Abstract Readability: Evidence from Top-5 Economics Journals – Supplemental Materials –](<Rodriguez, et al, 2024, supp material.pdf>)
+## Description
 
-## Code folder
+This repository contains all necessary files to reproduce all results published in [Rodriguez, et. al (2024, _Economics Letters_)](https://linkinghub.elsevier.com/retrieve/pii/S0165176524000259) as well as its [Supplemental Materials](<Rodriguez, et al, 2024, supp material.pdf>) in the:
+
+- [Code Folder](##Code-Folder)
+- [Data Folder](##Data-Folder)
+- [Tables Folder](##Tables-Folder)
+
+## Code Folder
 
 - [**0_tables_main.ipynb**](code/0_tables_main.ipynb): It generates all tables included in the main manuscript. The output is saved into *tables* folder within this repository. The input is ```data.csv``` which is stored into *data* folder, also within this repository.
 
@@ -21,13 +26,14 @@
 
 - [**readability_graph_specurve.yml**](code/readability_graph_specurve.yml): This file contains the parameters needed by the user-written [```specurve```](https://github.com/mgao6767/specurve) Stata command to run [```2_specurve_main.ipynb```](code/2_specurve_main.ipynb) and [```2_specurve_extra_supp.ipynb```](code/2_specurve_supp.ipynb).
 
-## Data folder
+## Data Folder
+This folder contains the original data set used in the main manuscript in comma separated variable format (```data.csv```) as well as in Stata ```dta-format 118 from Stata 14, 15, 16, or 17```. It also contains a markdown file with the variable names and descriptions.
 
 - [```data.csv```](data/data.csv)
 - [```data.dta```](data/data.dta)
 - [```vars_description.md```](data/vars_description.md)
 
-## Tables folder
+## Tables Folder
 
 ### Main Manuscript
 - [Table 1](tables/table1.tex) 
