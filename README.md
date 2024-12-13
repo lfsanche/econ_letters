@@ -2,6 +2,9 @@
 
 Rodriguez, Belicia, Kim P. Huynh, David Tomás Jacho-Chávez, and Leonardo Sánchez-Aragón, (2024), "_Abstract Readability: Evidence from Top-5 Economics Journals_," **Economics Letters**, 111541.
 
+## Requirements
+
+
 ## Description
 
 This repository contains all necessary files to reproduce all results published in [Rodriguez, et. al (2024, _Economics Letters_)](https://linkinghub.elsevier.com/retrieve/pii/S0165176524000259) as well as its [Supplemental Materials](<Rodriguez, et al, 2024, supp material.pdf>) in the:
@@ -9,6 +12,8 @@ This repository contains all necessary files to reproduce all results published 
 - [Code Folder](#Code-Folder)
 - [Data Folder](#Data-Folder)
 - [Tables Folder](#Tables-Folder)
+
+Note: Please note that the code is distributed in the form of Jupyter Notebooks in the [Code Folder](#Code-Folder).
 
 ## Code Folder
 
