@@ -6,9 +6,9 @@ Rodriguez, Belicia, Kim P. Huynh, David Tomás Jacho-Chávez, and Leonardo Sánc
 
 This repository contains all necessary files to reproduce all results published in [Rodriguez, et. al (2024, _Economics Letters_)](https://linkinghub.elsevier.com/retrieve/pii/S0165176524000259) as well as its [Supplemental Materials](<Rodriguez, et al, 2024, supp material.pdf>) in the:
 
-- [Code Folder](##Code-Folder)
-- [Data Folder](##Data-Folder)
-- [Tables Folder](##Tables-Folder)
+- [Code Folder](#Code-Folder)
+- [Data Folder](#Data-Folder)
+- [Tables Folder](#Tables-Folder)
 
 ## Code Folder
 
