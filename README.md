@@ -3,7 +3,16 @@
 Rodriguez, Belicia, Kim P. Huynh, David Tomás Jacho-Chávez, and Leonardo Sánchez-Aragón, (2024), "_Abstract Readability: Evidence from Top-5 Economics Journals_," **Economics Letters**, 111541.
 
 ## Requirements
+Both [Python](https://www.python.org/) [version 3.9.0] or above and [Stata](https://www.stata.com/) [version 17.0] or above are needed as well as the following libraries:
 
+| **Stata** | **Python** |
+|-----------|------------|
+| [oaxaca](https://github.com/benjann/oaxaca) [version 4.1.1]   | [pyyaml](https://pypi.org/project/PyYAML/) [version 6.0.2]       |
+| [reghdfe](https://github.com/sergiocorreia/reghdfe) [version 6.12.3]   | [pystata](https://www.stata.com/python/pystata18/index.html) [version 0.1.3]    |
+| [specurve](https://github.com/mgao6767/specurve)  | [pandas](https://pandas.pydata.org/) [version 1.3.2]     |
+|           | [numpy](https://numpy.org/) [version 1.21.1]      |
+
+Note: These are the versions of packages installed on a computer where we successfully ran all the notebooks without errors. We make no guarantee that the notebooks will work on other local installations or with different versions of these packages.
 
 ## Description
 
